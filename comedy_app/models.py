@@ -5,7 +5,7 @@ from django.contrib.postgres.fields import ArrayField
 class open_mic(models.Model):
     name = models.CharField(max_length=100)
     host = models.CharField(max_length=100, blank=True, null=True)
-    start_time = models.IntegerField(default=0) #or python actual time?
+    start_time = models.CharField(max_length=100)
     link = models.CharField(max_length=100, blank=True, null=True)
     ig_link = models.CharField(max_length=100, blank=True, null=True)
     venue = models.CharField(max_length=100)
